@@ -85,8 +85,6 @@ body{
   display:flex;
   justify-content: flex-start;
   align-content: stretch;
-
-
   padding: 60px 40px 0px 20px; 
  
 }
@@ -104,8 +102,15 @@ body{
     text-align: center;
 }
 
-button{
-    border: 1px solid black
+.leftside button{
+    border: 1px solid black;
+    margin: 30px 0px 30px 0px;
+    font-size: 14px;
+    background-color: white;
+    width: 150px;
+    height: 30px;
+    
+    
  
 }
 
@@ -113,11 +118,8 @@ button{
     display: flex;
 }
 
-@media(max-width:500px) {
-    .container {
-        
-    }
-}
+
+
 .logo{
   padding: 0x 0 0 0;
   margin-left: 50;
@@ -127,21 +129,74 @@ button{
 .leftside{
   justify-content: flex-start;
   font-size: 90px;
+  text-align: center;
+  
   
 }
 
 .img .rightside{
+    margin-top: 40px;
     
 }
 
 .hero{
   display: flex;
   justify-content: center;
+  align-items: space-between;
+  padding-top: 40px;
 }
 
-.footer
+.footer p{
+    align-content: center;
+    padding-top: 40px;
+    
+}
+
+
+.middle-img{
+    padding: 40px 0 40px 0;
+}
+
+
+section hr{
+    border-top: 1px solid black;
+    
+}
+
+section{
+    padding-bottom: 40px;
+    
+}
+
+.footer{
+    text-align: center;
+}
+
+/* Tablet max width */
+@media(max-width:800px) {
+     .rightside {
+         display: none;   
+        
+    }
+     .container{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+     .logo{
+         width: 40%;
+         
+     }
+
 
 
 @media(max-width:500px){
-
+    .navigation{
+        flex-direction: column;
+        justify-content:center;
+    }
+    
+    .container{
+        
+    }
 }
