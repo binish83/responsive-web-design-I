@@ -67,9 +67,6 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
-html{
-  
-}
 
 body{
   width:800px;
@@ -77,15 +74,20 @@ body{
 }
 
 .navigation{
-  
+  display:flex;
   text-decoration: none;
   padding: 50;
 }
 
 .navigation a{
-  color: black;
+  color: gray;
   text-decoration: none;
-  padding: 60px 20px 60px 20px; 
+  display:flex;
+  justify-content: flex-start;
+  align-content: stretch;
+
+
+  padding: 60px 40px 0px 20px; 
  
 }
 
@@ -97,21 +99,39 @@ body{
   margin: 0 auto;
 }
 
+.leftside h1{
+    font-size: 80px;
+    text-align: center;
+}
+
+button{
+    border: 1px solid black
+ 
+}
+
+.boxes{
+    display: flex;
+}
+
 @media(max-width:500px) {
     .container {
         
     }
 }
 .logo{
-  padding: 0px 0px 0px 54px;
+  padding: 0x 0 0 0;
+  margin-left: 50;
+  
 }
 
 .leftside{
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   font-size: 90px;
   
+}
+
+.img .rightside{
+    
 }
 
 .hero{
@@ -119,7 +139,9 @@ body{
   justify-content: center;
 }
 
+.footer
+
 
 @media(max-width:500px){
-    
+
 }
