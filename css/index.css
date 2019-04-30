@@ -71,6 +71,7 @@ h1, h2, h3, h4, h5 {
 body{
   width:800px;
   margin:auto;
+  
 }
 
 .navigation{
@@ -155,6 +156,7 @@ body{
 
 .middle-img{
     padding: 40px 0 40px 0;
+    width: 100%;
 }
 
 
@@ -179,7 +181,9 @@ section{
         
     }
      .container{
+        display:flex;
         flex-direction: column-reverse;
+        padding-top: 10px;
         flex-wrap: wrap;
         justify-content: center;
      }
@@ -191,12 +195,39 @@ section{
 
 
 @media(max-width:500px){
+    
     .navigation{
         flex-direction: column;
-        justify-content:center;
+        
     }
     
     .container{
+        align-items:center;
+        max-width: 500px;
         
+    }
+
+    .boxes {
+        display:flex;
+        flex-direction: column; 
+        
+    }
+    .boxes h1{
+        font-size: 15px;
+
+    }
+    body{
+        max-width:500px;
+        margin:auto;
+        border: 2px solid red;
+      }
+    .middle-img{
+        padding: 40px 20px 40px 20px;
+        width: 98%;
+    }
+    .cards {
+        width: 98%;
+        padding: 20px;
+       
     }
 }
